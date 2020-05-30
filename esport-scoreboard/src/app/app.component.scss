@@ -19,19 +19,8 @@
     background-color: #64B3AB;
     color: #EBF5F0;
     padding: 12px;
-    margin-right: 2px;
-
-   
+    margin-right: 2px;   
 }
-
-.card-prepend{
-    border-top-left-radius: 20px;
-}
-
-.card-append{
-    border-bottom-right-radius: 20px;
-}
-
 
 .title {
     margin: 5vw;
@@ -45,4 +34,74 @@ img {
     margin-top: 32px;
     max-width: 200px;
     max-height: auto;
+}
+
+
+
+// Styling //
+
+.row-header {
+    background-color: #344C54;
+    border-left: 12px solid #EBF5F0;
+    border-right: 12px solid #EBF5F0;
+}
+
+.score-header {
+    .row-number {
+        transform: skew(-20deg);
+    
+        .card-block {
+            transform: skew(20deg);
+        }
+    }
+    
+    .row-team {
+        transform: skew(-20deg);
+        
+        .card-block {
+            transform: skew(20deg);
+        }
+    
+        .text {
+            margin-left: 2vw;
+        }
+    }
+    
+    .row-score {
+        transform: skew(-20deg);
+    
+        .card-block {
+            transform: skew(20deg);
+        }
+    }
+}
+
+.score-body {
+    .row-number {
+        transform: skew(-20deg);
+
+        .card-block {
+            transform: skew(10deg);
+        }
+    }
+
+    .row-team {
+        transform: skew(-20deg);
+        
+        .card-block {
+            transform: skew(10deg);
+        }
+
+        .text {
+            margin-left: 2vw;
+        }
+    }
+
+    .row-score {
+        transform: skew(-20deg);
+
+        .card-block {
+            transform: skew(10deg);
+        }
+    }
 }

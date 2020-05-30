@@ -14,19 +14,63 @@
     </div>
     <div class="col-9">
 
-        <div class="row score-row" *ngFor="let score of scores">
-          <div class="col-8">
-            <div class="card card-prepend">
-              <div class="card-block">
-                <h4 class="text">{{score.team}}</h4>
-              </div>
+      <div class="row score-row score-header">
+        <div claSS="col-2">
+          <div class="card row-number row-header">
+            <div class="card-block">
+              <h4 class="text"><b>#</b></h4>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card card-append">
-              <div class="card-block">
-                <h4 class="text">{{score.kill}}</h4>
-              </div>
+        </div>
+        <div class="col-6">
+          <div class="card row-team row-header">
+            <div class="card-block">
+              <h4 class="text"><b>TEAM NAME</b></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card row-score row-header">
+            <div class="card-block">
+              <h4 class="text"><b>K</b></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card row-score row-header">
+            <div class="card-block">
+              <h4 class="text"><b>D</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row score-row score-body" *ngFor="let score of scores; index as i">
+        <div class="col-2">
+          <div class="card row-number">
+            <div class="card-block">
+              <h4 class="text">{{i + 1}}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 text-left">
+          <div class="card row-team">
+            <div class="card-block">
+              <h4 class="text">{{score.team}}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-2" style="padding: 0 0 0 15px">
+          <div class="card row row-score" style="border : 4px solid #678F91;">
+            <div class="card-block">
+              <div class="col"><h4 class="text">{{score.kill}}</h4></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2" style="padding: 0 15px 0 0">
+          <div class="card row row-score" style="border : 4px solid #678F91;">
+            <div class="card-block">
+              <div class="col"><h4 class="text">{{score.death}}</h4></div>
             </div>
           </div>
         </div>
