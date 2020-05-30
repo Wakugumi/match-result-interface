@@ -1,3 +1,48 @@
+.container-fluid {
+    padding: 0px 32px;
+}
+
 .score-row {
     margin-bottom: 24px;
+
+    .col-8 {
+        padding:2px;
+    }
+
+    .col-4 {
+        padding:2px;
+    }
+}
+
+
+.card {
+    background-color: #64B3AB;
+    color: #EBF5F0;
+    padding: 12px;
+    margin-right: 2px;
+
+   
+}
+
+.card-prepend{
+    border-top-left-radius: 20px;
+}
+
+.card-append{
+    border-bottom-right-radius: 20px;
+}
+
+
+.title {
+    margin: 5vw;
+}
+
+.text {
+    font-size: 2vw;
+}
+
+img {
+    margin-top: 32px;
+    max-width: 200px;
+    max-height: auto;
 }
